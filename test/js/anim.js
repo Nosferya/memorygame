@@ -1,6 +1,5 @@
-var divpict = document.getElementById('pict');
-divpict.style.width = "150px";
-divpict.style.height = "150px";
+var divpict = document.getElementsBytagName('td');
+
 
 var pictclick = document.getElementById("pict");
 pictclick.addEventListener('click', cha);
