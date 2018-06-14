@@ -1,0 +1,37 @@
+/* ******MISE EN PAGE DU FORMAULAIRE DE VALIDATION ******/
+label{
+  display:inline-block;
+  width: 150px;
+  height:22px;
+  margin-left: 20px;
+  margin-right: :10px;
+  vertical-align: middle;
+}
+
+input{
+  width: 200px;
+  height:22px;
+}
+
+label,input {
+  margin-top: 5px;
+}
+
+input#civilite{
+  display: inline-block;
+  width: 20px;
+  vertical-align: middle;
+  margin-left: 40px;
+}
+
+span{
+  display:inline-block;
+  vertical-align: bottom;
+  color:red;
+  font-size:20px;
+  margin-left: 4px;
+}
+span#etoile{
+  margin-left: 35px
+}
+/******FIN DE LA MISE EN PAGE DU FORMULAIRE DE VALIDATION*****/

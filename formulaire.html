@@ -1,0 +1,31 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/css_formulaire.css">
+  <title>formulaire</title>
+</head>
+
+  <body>
+<!-- FORMULAIRE DE VALIDATION -->
+    <form  name="formulaire" method ="post" action="formulaire.php" onsubmit="return validateForm(this)" >
+      <span>* champ obligatoire</span></br></br>
+        <label for ="civilite">Civilité</label>
+          <input  type="radio" name="civilite" id="civilite" value = "Mme">Mme
+          <input  type="radio" name="civilite" id="civilite" value="M">M<span id="etoile">*</span></br>
+
+        <label for="nom">Nom:</label>
+          <input type="text" name="nom" id="nom" ><span>*</span></br>
+
+        <label for="prenom">Prénom:</label>
+          <input type="text" name="prenom" id="prenom" ><span>*</span></br>
+
+        <label for="email">Email: </label>
+          <input type="email" name="email" id="email" ><span>*</span></br>
+
+        <label>Temps réalisé:  <span><! -- TEMPS REPRIS DU TIMER EN JS--> </span></label>
+
+    </form>
+    <!-- FIN FORMULAIRE DE VALIDATION-->
+
+  </body>
+</html>
