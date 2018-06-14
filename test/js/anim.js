@@ -1,6 +1,3 @@
-var divpict = document.getElementsBytagName('td');
-
-
 var pictclick = document.getElementById("pict");
 pictclick.addEventListener('click', cha);
 let nb = 0;
