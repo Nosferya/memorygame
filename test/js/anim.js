@@ -1,7 +1,3 @@
-var divpict = document.getElementById('pict');
-divpict.style.width = "150px";
-divpict.style.height = "150px";
-
 var pictclick = document.getElementById("pict");
 pictclick.addEventListener('click', cha);
 let nb = 0;
