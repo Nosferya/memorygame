@@ -1,1 +1,23 @@
 
+<<<<<<< HEAD
+=======
+h1{
+  text-align: center;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+table, tr, td
+{
+    margin: 0px;
+    padding:0px;
+    border: solid 1px #0f0f0f;
+}
+tr, td{
+    margin-right: 50px;
+    width: 250px;
+    height: 250px;
+}
+>>>>>>> 9f4ffc03aaf048a5264310262bfb8e3dca040615
