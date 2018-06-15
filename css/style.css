@@ -6,7 +6,7 @@
 
 body {
     margin: 20px 0;
-    background: #FFFFFF;
+    background: #000;
 }
 
 .grid {
@@ -55,5 +55,5 @@ body {
 }
 
 .match .front {
-    background: #FFFFFF !important;
+    background: none !important;
 }
