@@ -1,31 +1,47 @@
+<!DOCTYPE html>
+
 <html>
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/css_formulaire.css">
-  <title>formulaire</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/css_formulaire.css">
+
+    <title>formulaire</title>
+  </head>
 
   <body>
-<!-- FORMULAIRE DE VALIDATION -->
-    <form  name=" formulaire" method ="post" action="formulaire.php" onsubmit="return validateForm(this)" >
-      <span>* champ obligatoire</span></br></br>
-        <label for ="civilite">Civilité</label>
-          <input  type="radio" name="civilite" id="civilite" value = "Mme">Mme
-          <input  type="radio" name="civilite" id="civilite" value="M">M<span id="etoile">*</span></br>
+    <div class="page_succes">
+  <!-- FORMULAIRE DE VALIDATION -->
+    <p>BRAVO VOUS AVEZ REUSSI  !!!!<br/> Enregistrez-vous pour valider votre score</p>
+      <div class = "formulaire">
 
-        <label for="nom">Nom:</label>
-          <input type="text" name="nom" id="nom" ><span>*</span></br>
+        <form  name=" formulaire" method ="post" action="formulaire.php" onsubmit = "return verif()" >
 
-        <label for="prenom">Prénom:</label>
-          <input type="text" name="prenom" id="prenom" ><span>*</span></br>
 
-        <label for="email">Email: </label>
-          <input type="email" name="email" id="email" ><span>*</span></br>
+            <label for ="civilite">Civilité</label>
+              <input  type="radio" name="civilite" id="femme" value = "Mme">Mme
+              <input  type="radio" name="civilite" id="homme" value = "M">M<span id="etoile">*</span><br/><br/>
 
-        <label>Temps réalisé:  <span><! -- TEMPS REPRIS DU TIMER EN JS--> </span></label>
+            <label for="nom"><span>*</span>Nom:</label><br/>
+              <input type="text" name="nom" id="nom" ><br/>
 
-    </form>
-    <!-- FIN FORMULAIRE DE VALIDATION-->
+            <label for="prenom"><span>*</span>Prénom:</label><br/>
+              <input type="text" name="prenom" id="prenom" ><br/>
 
+            <label for="email"><span>*</span>Email: </label><br/>
+              <input type="email" name="email" id="email" ><br/><br/>
+
+            <span>* champ obligatoire</span><br/><br/>
+
+            <label>Temps réalisé: <!-- TEMPS REPRIS DU TIMER EN JS--> </label><br/><br/>
+          <input type="submit" value="envoyer">
+
+        </form>
+
+        <script src="js/js_formulaireverif.js" type="text/javascript" charset="utf-8"></script>
+      </div>
+      <!-- FIN FORMULAIRE DE VALIDATION-->
+
+    </div>
   </body>
 </html>
