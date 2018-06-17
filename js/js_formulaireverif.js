@@ -9,7 +9,7 @@ function verif (){
 
     if (homme == "" && femme == "")
       {
-        alert ("veuillez cocher une case, merci");
+        alert ("veuillez choisir votre civilité, merci");
         return false;
       }
 
@@ -36,7 +36,7 @@ function verif (){
 
     else
     {
-      alert("merci");
+      alert("Merci de cliquer sur ok pour visualiser vos données.");
       return true;
     }
   }
