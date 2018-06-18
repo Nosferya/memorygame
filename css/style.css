@@ -9,6 +9,10 @@ body {
     background: #FFFFFF;
 }
 
+.titletop {
+    margin: 0 auto;
+}
+
 .grid {
     max-width: 660px;
     margin: 0 auto;
@@ -27,8 +31,8 @@ body {
 .card,
 .back,
 .front {
-    height: 120px;
-    width: 120px;
+    height: 110px;
+    width: 110px;
 }
 
 .back,
@@ -64,6 +68,11 @@ body {
 
 /*début CSS Interface*/
 
+body {
+    background: #FAB942 url('../img/background.jpg');
+    background-size: 100%;
+}
+
 .mainframe {
     position: absolute;
     top: 0;
@@ -72,90 +81,133 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #FAB942 url('../img/background.jpg') no-repeat center center / cover;
 }
 
 .beginning {
     position: absolute;
-    top: 100px;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: calc(100% - 100px);
+    width: 200px;
+    left: calc( 50% - 100px);
+    top: 200px;
 }
 
 .legalint {
     position: absolute;
-    top: 100px;
-    left: 5%;
+    top: 150px;
+    left: 25%;
     bottom: 0;
     right: 5%;
-    width: 90%;
-    height: calc(100% - 100px);
+    width: 700px;
+    height: 658px;
     font-size: 1rem;
-    color: white;
-    padding: 1%;
-    background: #FAB942 url('../img/woodbg.jpg') no-repeat center center / cover;
+    color: black;
+    padding-top: 95px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: url('../img/backgroud.png') no-repeat center center / cover;
 }
 
 .gameint {
     position: absolute;
-    top: 100px;
+    top: 150px;
     left: 0;
     bottom: 0;
     right: 0;
     width: 100%;
-    height: calc(100% - 100px);
+    height: calc(100% - 150px);
 }
 
 .gamezone {
     position: absolute;
     top: 1%;
-    left: 2.5%;
+    left: 25%;
+    right: 31.75%;
     width: 700px;
-    height: 98%;
-    background: #FAB942 url('../img/woodbg.jpg') no-repeat center center / cover;
-    padding-top: 40px;
+    height: 658px;
+    background: url('../img/backgroud.png') no-repeat center center / cover;
+    padding-top: 90px;
 }
 
 .interface {
     position: absolute;
-    top: 1%;
-    right: 15%;
-    width: 400px;
-    height: 98%;
-    background: #FAB942 url('../img/woodbg2.jpeg') no-repeat center center / cover;
-    font-size: 32px;
+    top: 88%;
+    right: 0%;
+    width: 700px;
+    font-size: 16px;
     text-align: center;
-    color: #FFFFFF;
-}
-
-.title {
-    font-size: 3rem;
-    color: black;
+    color: #000;
+    display: inline-block;
 }
 
 .formulaire {
     position: absolute;
     padding-left: 1%;
-    top: 1%;
-    left: 2.5%;
+    padding-top: 90px;
+    left: 25%;
+    right: 31.75%;
     width: 700px;
-    height: 98%;
-    border: 1px solid black;
-    background: #FAB942 url('../img/woodbg3.jpg') no-repeat center center / cover;
+    height: 658px;
+    background: url('../img/backgroud.png') no-repeat center center / cover;
     font-size: 1.45rem;
-    color: white;
+    color: black;
 }
 
-.imgbutton {
+input[type=button],
+input[type=submit],
+input[type=reset],
+button,
+.button {
+    padding: 5px 15px;
+    margin: 3px 4px;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 26px;
+    cursor: pointer;
+    background: #6D420A;
+    background: linear-gradient(top, #6D420A 0%, #542900 100%);
+    background: -moz-linear-gradient(top, #6D420A 0%, #542900 100%);
+    background: -webkit-linear-gradient(top, #6D420A 0%, #542900 100%);
+    background: -o-linear-gradient(top, #6D420A 0%, #542900 100%);
+    border: 1px solid #3F4003;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+    -o-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.50);
+}
+
+input[type=button]:hover,
+input[type=submit]:hover,
+input[type=reset]:hover,
+button:hover,
+.button:hover {
+    background: linear-gradient(top, #875c24 0%, #6D420A 100%);
+    background: -moz-linear-gradient(top, #875c24 0%, #6D420A 100%);
+    background: -webkit-linear-gradient(top, #875c24 0%, #6D420A 100%);
+    background: -o-linear-gradient(top, #875c24 0%, #6D420A 100%);
+}
+
+#legalt {
     position: absolute;
-    top: calc(50% - 50px);
-    left: calc(50% - 200px);
-    width: 400px;
-    height: 100px;
-    background: #FAB942 url('../img/woodbg3.jpg') no-repeat center center / cover;
+    bottom: 0;
+    left: 0;
+}
+
+#closebtn {
+    position: absolute;
+    bottom: 50px;
+    left: 30%;
+}
+
+input[type=button]:active,
+input[type=submit]:active,
+input[type=reset]:active,
+button:active,
+.button:active {
+    opacity: 0.8;
 }
 
 .imgbutton2 {
@@ -175,11 +227,6 @@ body {
     height: 50px;
     background: #FAB942 url('../img/woodbg3.jpg') no-repeat center center / cover;
 }
-
-
-/*.txtbtn {
-    padding-bottom: 50px;
-}*/
 
 .title {
     text-align: center;
@@ -206,7 +253,7 @@ body {
 #cc,
 #ac {
     color: green;
-    font-size: 4rem;
+    font-size: 17px;
 }
 
 a {
