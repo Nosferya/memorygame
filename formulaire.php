@@ -3,7 +3,7 @@
 <html lang=fr dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/style.css">
     <title></title>
 
   </head>
@@ -22,6 +22,7 @@ echo "<p> Merci d'avoir jouer " .$civilite." ".$nom." ".$prenom.".</p>";
 echo "<p> Votre mail est : ".$email.".</p>"
 ?>
 
-    <p> pour modifier votre formulaire, cliquez <a href="formulaire.html">ici</a>.</p>
+    <p> Pour modifier votre formulaire, cliquez <a href="formulaire.html">ici</a>.</p>
+    <p> Allez, on y retourne ? <a href="index.html"><button type ="button" class ="button">Rejouer</button></a></p>
   </body>
 </html>
