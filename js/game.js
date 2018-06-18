@@ -133,11 +133,11 @@ gameGrid.forEach(item => { // pour chaque item de GameGrid (ligne)
 const match = () => { //
     const selected = document.querySelectorAll('.selected');
     selected.forEach(card => {
-        card.classList.add('match');
+        card.classList.add('match'); // ajoute la classe 'match' au image lorsqu'elles match, ce qui permet grâce au css de changer son design
     });
 };
 
-const resetGuesses = () => {
+const resetGuesses = () => { // bloc de code pour reset les choix 
     firstGuess = '';
     secondGuess = '';
     count = 0;
