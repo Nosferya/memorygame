@@ -1,106 +1,92 @@
-@import url(reset.css);
-
-body,html
-{
-  font-family:"Trebuchet MS", serif;
-  font-size: 62.5%;
-  height:100%;
-
-}
-
-
 /* ******MISE EN PAGE DU FORMAULAIRE DE VALIDATION ******/
+
 @import url(reset.css);
-
-body,html
-{
-  font-family:"Trebuchet MS", serif;
-  font-size: 62.5%;
-
-  color:white;
+body,
+html {
+    font-family: "Trebuchet MS", serif;
+    font-size: 62.5%;
+    color: white;
 }
 
-.page_succes{
-  position:relative;
-  width:100%;
-  max-width: 525px;
-  min-height: 600px;
-  margin:auto;
+p {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.formulaire {
-  position:absolute;
-  width:100%;
-  height: 100%;
-  display : flex;
-  justify-content: center;
-  background-color: rgba(40,57,101,0.9);
-  border-radius: 10px;
-  font-size: 2rem;
+label {
+    width: 150px;
+    height: 22px;
+    font-size: 2rem;
+    vertical-align: middle;
 }
 
-p{
-  font-size: 4rem;
-  color: red;
-  text-align: center;
-  margin-bottom: 20px;
+input {
+    width: 90%;
+    height: 40px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 0;
+    margin-top: 2%;
+    margin-left: 4%;
+    padding-left: 1%;
+    font-size: 2rem;
 }
 
-
-label
-{
-  width: 150px;
-  height:22px;
-  vertical-align: middle;
+label {
+    padding-top: 40px;
 }
 
-input
-{
-  max-width: 500px;
-  height: 40px;
-  border-radius: 25px;
-  background-color: rgba(255,255,255,0.1);
-  border: 0;
-  margin-top: 2%;
-  padding-left: 1%;
+form label:first-child {
+    padding: 0;
 }
 
-label
-{
-  padding-top: 40px;
+input[type="radio"] {
+    width: 20px;
+    vertical-align: middle;
+    margin-left: 40px;
+    font-size: 2rem;
 }
 
-form label:first-child
-{
-  padding:0;
+span {
+    color: red;
+    margin-right: 7px;
+    font-size: 2rem;
 }
 
-input[type="radio"]
-{
-  width: 20px;
-  vertical-align: middle;
-  margin-left: 40px;
+#etoile {
+    margin-left: 35px;
+    color: red;
+    margin-right: 7px;
+    font-size: 2rem;
 }
 
-span{
-  color:red;
-  margin-right: 7px;
+input[type="submit"] {
+    width: 200px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10% 25%;
+    color: black;
+    font-size: 2rem;
 }
 
-span#etoile
-{
-  margin-left: 35px
+.txt {
+    font-size: 2rem;
+    color: white;
 }
 
-input[type="submit"]
-{
-  width: 200px;
-  height:60px;
-  border-radius: 50%;
-  margin : 10% 25%;
-  color:white;
-  font-size: 2rem;
-
+a {
+    font-size: 1.5rem;
 }
+
+.legalint {
+    font-size: 1rem;
+}
+
+#legalt {
+    font-size: 1.5rem;
+}
+
 
 /******FIN DE LA MISE EN PAGE DU FORMULAIRE DE VALIDATION*****/
