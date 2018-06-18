@@ -9,8 +9,8 @@ body {
     background: #FFFFFF;
 }
 
-.titletop {
-    margin: 0 auto;
+.titletop{
+	margin: 0 auto;
 }
 
 .grid {
@@ -19,6 +19,60 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.front {
+    z-index: 2;
+    background: #FAB942 url('../img/back.png') no-repeat center center / contain;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: #FFFFFF;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.selected {
+    transform: rotateY(180deg);
+}
+
+.match .front {
+    background: none !important;
+}
+
+
+/*fin CSS Cartes*/
+
+
+/*début CSS Interface*/
+
+.mainframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #FAB942 url('../img/background.jpg') no-repeat center center / cover;
+}
+
+.beginning {
+    position: absolute;
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: auto;
+    margin-bottom: 150px;
+    margin-left: 44%;
+    margin-right: 44%;
+}
+
+.legalint {
+    position: absolute;
+    top: 100px;
 }
 
 .card {
@@ -33,6 +87,7 @@ body {
 .front {
     height: 110px;
     width: 110px;
+
 }
 
 .back,
@@ -81,9 +136,13 @@ body {
 
 .beginning {
     position: absolute;
-    width: 200px;
-    left: calc( 50% - 100px);
-    top: 200px;
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: auto;
+    margin-bottom: 150px;
+    margin-left: 44%;
+    margin-right: 44%;
 }
 
 .legalint {
@@ -93,7 +152,7 @@ body {
     bottom: 0;
     right: 5%;
     width: 90%;
-    height: calc(100% - 150px);
+    height: calc(100% - 100px);
     font-size: 1rem;
     color: white;
     padding: 1%;
@@ -102,22 +161,21 @@ body {
 
 .gameint {
     position: absolute;
-    top: 150px;
+    top: 100px;
     left: 0;
     bottom: 0;
     right: 0;
     width: 100%;
-    height: calc(100% - 150px);
+    height: calc(100% - 100px);
 }
 
 .gamezone {
     position: absolute;
     top: 1%;
-    left: 25%;
-    right: 31.75%;
+    left: 2.5%;
     width: 700px;
     height: 658px;
-    background: url('../img/backgroud.png') no-repeat center center / cover;
+    background:  url('../img/backgroud.png') no-repeat center center / cover;
     padding-top: 90px;
 }
 
@@ -126,76 +184,65 @@ body {
     top: 88%;
     right: 0%;
     width: 700px;
+    height: 98%;
     font-size: 16px;
     text-align: center;
     color: #000;
     display: inline-block;
 }
 
+.title {
+    font-size: 3rem;
+    color: black;
+}
+
 .formulaire {
     position: absolute;
     padding-left: 1%;
     padding-top: 90px;
-    left: 25%;
-    right: 31.75%;
+    top: 2.5%;
+    left: 2.5%;
     width: 700px;
     height: 658px;
     background: url('../img/backgroud.png') no-repeat center center / cover;
     font-size: 1.45rem;
     color: black;
+
 }
 
-input[type=button],
-input[type=submit],
-input[type=reset],
-button,
-.button {
-    padding: 5px 15px;
-    margin: 3px 4px;
-    display: inline-block;
-    color: #ffffff;
-    font-size: 26px;
-    cursor: pointer;
-    background: #6D420A;
-    background: linear-gradient(top, #6D420A 0%, #542900 100%);
-    background: -moz-linear-gradient(top, #6D420A 0%, #542900 100%);
-    background: -webkit-linear-gradient(top, #6D420A 0%, #542900 100%);
-    background: -o-linear-gradient(top, #6D420A 0%, #542900 100%);
-    border: 1px solid #3F4003;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -o-border-radius: 5px;
-    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
-    -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
-    -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
-    -o-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.50);
-}
 
-input[type=button]:hover,
-input[type=submit]:hover,
-input[type=reset]:hover,
-button:hover,
-.button:hover {
-    background: linear-gradient(top, #875c24 0%, #6D420A 100%);
-    background: -moz-linear-gradient(top, #875c24 0%, #6D420A 100%);
-    background: -webkit-linear-gradient(top, #875c24 0%, #6D420A 100%);
-    background: -o-linear-gradient(top, #875c24 0%, #6D420A 100%);
-}
 
-#legalt {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+input[type=button], input[type=submit], input[type=reset], button, .button {
+	padding: 5px 15px;
+	margin: 3px 4px;
+	display: inline-block;
+	color: #ffffff;
+	font-size: 26px;
+	cursor: pointer;
+	background: #6D420A;
+	background: linear-gradient(top, #6D420A 0%, #542900 100%);
+	background: -moz-linear-gradient(top, #6D420A 0%, #542900 100%);
+	background: -webkit-linear-gradient(top, #6D420A 0%, #542900 100%);
+	background: -o-linear-gradient(top, #6D420A 0%, #542900 100%);
+	border: 1px solid #3F4003;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+	-moz-box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+	-webkit-box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+	-o-box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.25), inset 1px 1px 0px 0px rgba(255, 255, 255, 0.25);
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.50);
 }
-
-input[type=button]:active,
-input[type=submit]:active,
-input[type=reset]:active,
-button:active,
-.button:active {
-    opacity: 0.8;
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover, button:hover, .button:hover {
+	background: linear-gradient(top, #875c24 0%, #6D420A 100%);
+	background: -moz-linear-gradient(top, #875c24 0%, #6D420A 100%);
+	background: -webkit-linear-gradient(top, #875c24 0%, #6D420A 100%);
+	background: -o-linear-gradient(top, #875c24 0%, #6D420A 100%);
+}
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active, button:active, .button:active{
+	opacity:0.8;
 }
 
 .imgbutton2 {
@@ -215,6 +262,11 @@ button:active,
     height: 50px;
     background: #FAB942 url('../img/woodbg3.jpg') no-repeat center center / cover;
 }
+
+
+/*.txtbtn {
+    padding-bottom: 50px;
+}*/
 
 .title {
     text-align: center;
