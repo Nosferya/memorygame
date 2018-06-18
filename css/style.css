@@ -21,6 +21,14 @@ body {
     justify-content: space-evenly;
 }
 
+.card {
+    position: relative;
+    transition: all .4s linear;
+    transform-style: preserve-3d;
+    margin: 5px;
+}
+
+
 .front {
     z-index: 2;
     background: #FAB942 url('../img/back.png') no-repeat center center / contain;
