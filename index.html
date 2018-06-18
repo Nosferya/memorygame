@@ -55,16 +55,18 @@
         </div>
 
         <div class="gameint" id="main" style="display: none">
-            <div class="gamezone" id="game" style="display: none"></div>
-            <div class="interface" id="sideint" style="display: none">
-                <p>Timer : </p>
-                <p><span id="mc">0</span> : <span id="sc">0</span></p>
-                <p>Nombre de coups : </p>
-                <p><span id="cc">0</span> Coups</p>
-                <p>Animaux trouvés : </p>
-                <p><span id="ac">0</span> trouvés</p>
+            <div class="gamezone" id="game" style="display: none">
+              <div class="interface" id="sideint" style="display: none">
+                  <p>Timer :
+                  <span id="mc">0</span> : <span id="sc">0</span> -
+                  Nombre de coups :
+                  <span id="cc">0</span> Coups -
+                  Animaux trouvés :
+                  <span id="ac">0</span> trouvés</p>
 
+              </div>
             </div>
+
             <div class="formulaire" id="form" style="display: none">
                 <form name=" formulaire" method="post" action="formulaire.php" onsubmit="return verif()">
 
